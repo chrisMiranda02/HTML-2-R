@@ -5,40 +5,73 @@
 <title>CHRS Art</title>
 <style>
 	body{
-		background-color:honeydew;}
-		
+		background-color:honeydew;
 	}
+		
+	button
+	{	padding-top:20px;
+		padding-bottom:20px;
+		background-color:lightgreen;
+		margin-top:30px;
+		margin-left: 550px;
+	}
+	H1
+	{	text-align: inherit;
+		background-color:lightgreen;
+	}
+	table
+	{	
+		margin-left: 550px;
+	}
+	#imgone
+	{
+		margin-left:550px;
+		margin-top: 50px;
+		border-radius:100%;
+	}
+	#imgtwo
+	{
+		margin-left: 550px;
+		border-radius:20%;
+	}
+	.lists
+	{
+	margin-left: 550px;
+	}
+		}
 	</style>
 	</head>
 
 <body>
-	<table align="center" cellpadding="30px">
-		<th><a href="index.html">Home</a></th>
-		<th><a href="art.html" target="_self">Art</a></th>
-		<th><a href="https://foundarrt.blogspot.com" target="_blank">Blog</a></th>
-		<th><a href="about-me.html">About me</a></th>
-	</table>
-<img src="images/estefania.jpg" alt="ilustration of my best friend estefania">
-	<ul>
-		<li style="color: blue">Made using procreate.</li>
-		<li>Took about 2 hours to complete.</li>
+		<table align="center" cellpadding="30px">
+			<th><a href="index.html">Home</a></th>
+			<th><a href="art.html" target="_self">Art</a></th>
+			<th><a href="https://foundarrt.blogspot.com" target="_blank">Blog</a></th>
+			<th><a href="about-me.html">About me</a></th>
+		</table>
+<img src="images/estefania.jpg" alt="ilustration of my best friend estefania" id="imgone">
+<ul class="lists">
+		<li style="color: blue;">Made using procreate.</li>
+		
 		</ul>
 
 	
-	<img src="images/artwork-lines.jpg" alt="Artwork with lines">
-	<ul>
-	<li>Made using Adobe Ilustrator.</li>
+	<img src="images/artwork-lines.jpg" alt="Artwork with lines" id="imgtwo">
+	<ul class="lists">
+	<li style="color:crimson;">Made using Adobe Ilustrator.</li>
 		<li>Made using brushes and effects.</li>
-		<li style="color:crimson">Took about 30 mins.</li>
+	
+		<h1>My favorite apps to make digital Art.</h1>
+		
 		</ul>
-	<table border="thin">
+	<table border="thin;">
 		<tr bgcolor="grey">
 		<th style="color:black">App/software</th>
 			<th>Price</th>
 		</tr>
 		<tr>
 		<td>Procreate</td>
-			<td>$9.99</td>
+			<td id="price"></td>
 		</tr>
 		<tr>
 			<td bgcolor=" #A8A8A8">Adobe Ilustrator</td>
@@ -46,13 +79,12 @@
 			</tr>
 		<tr>
 		<td>Adobe Photoshop</td>
-			<td id="price">$/mo</td>
+			<td>$20.99/mo</td>
 		</tr>
 		</table>
-	
 	<button type="button"
-onclick="document.getElementById('price').innerHTML =20.99" >
-Click me to display Price</button>
+onclick="document.getElementById('price').innerHTML =9.99">
+ <span style="color:green;font-weight:bold;">Click</span> to display price.</button>
 		
 	
 </body>
